@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SHOPNEX — Discover More. Shop Smarter." />
+  <title>SHOPNEX | Discover More. Shop Smarter.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="announcement">MEGA SHOPPING FESTIVAL · EXTRA 10% OFF WITH CODE <strong> NEX10 </strong></div>
+  <header class="site-header">
+    <div class="header-main container">
+      <button class="icon-btn mobile-menu" id="menuToggle" aria-label="Open menu">☰</button>
+      <a class="logo" href="#" aria-label="SHOPNEX home"><span class="logo-mark">S</span>SHOP<span>NEX</span></a>
+      <div class="search-wrap">
+        <span class="search-symbol">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search for products, brands and more..." autocomplete="off">
+        <button id="searchBtn">Search</button>
+        <div class="suggestions" id="suggestions"></div>
+      </div>
+      <div class="header-actions">
+        <button class="text-action location-action" title="Delivery location">⌖ <span>Deliver to<br><b>India</b></span></button>
+        <button class="text-action" id="accountBtn">♙ <span>Account<br><b>Sign in</b></span></button>
+        <button class="icon-btn" id="themeToggle" title="Toggle theme">◐</button>
+        <button class="icon-btn" id="wishlistHeader" title="Wishlist">♡ <i id="wishCount">0</i></button>
+        <button class="icon-btn cart-trigger" id="cartHeader" title="Shopping cart">🛒 <i id="cartCount">0</i></button>
+      </div>
+    </div>
+    <nav class="category-nav" id="categoryNav">
+      <div class="container nav-inner">
+        <a href="#home">Home</a><a href="#products" data-category="Electronics">Electronics</a>
+        <a href="#products" data-category="Fashion">Fashion</a><a href="#products" data-category="Men's Fashion">Men's Fashion</a>
+        <a href="#products" data-category="Women's Fashion">Women's Fashion</a><a href="#products" data-category="Home & Kitchen">Home & Kitchen</a>
+        <a href="#products" data-category="Beauty">Beauty</a><a href="#products" data-category="Sports">Sports</a>
+        <a href="#offers">Offers <span class="nav-hot">HOT</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="pulse"></span> THE BIGGEST SALE OF THE SEASON</span>
+        <h1>Everything you need,<br><em>all in one place.</em></h1>
+        <p>Discover amazing products, exclusive deals and an effortless shopping experience.</p>
+        <div class="hero-buttons"><a class="btn btn-primary" href="#products">Shop now <span>↗</span></a><a class="btn btn-ghost" href="#offers">Explore deals</a></div>
+        <div class="hero-proof"><div class="proof-avatars"><b>✓</b><b>★</b><b>+</b></div><span><strong>10k+</strong> happy shoppers</span><span class="proof-divider"></span><span>✦ Curated for you</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-sale">UP TO <strong>70%</strong> OFF</div>
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30b?auto=format&fit=crop&w=900&q=85" alt="Premium wireless headphones">
+        <div class="floating-tag tag-top">✦ Trending now</div><div class="floating-tag tag-bottom">Free delivery <b>↗</b></div>
+        <div class="hero-slide-dots"><span class="active"></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip container">
+      <div><span>♧</span><p><b>Free shipping</b><small>On orders over ₹999</small></p></div>
+      <div><span>↺</span><p><b>Easy returns</b><small>7-day return policy</small></p></div>
+      <div><span>♢</span><p><b>Secure payments</b><small>100% protected checkout</small></p></div>
+      <div><span>☏</span><p><b>24/7 support</b><small>We're here to help</small></p></div>
+    </section>
+
+    <section class="section container" id="categories">
+      <div class="section-heading"><div><span class="eyebrow">BROWSE BY INTEREST</span><h2>Shop by category</h2></div><a class="view-link" href="#products">View all categories ↗</a></div>
+      <div class="category-grid">
+        <button class="category-card cat-electronics" data-filter="Electronics"><span class="cat-icon">⌁</span><b>Electronics</b><small>Latest tech & gadgets</small></button>
+        <button class="category-card cat-fashion" data-filter="Fashion"><span class="cat-icon">◇</span><b>Fashion</b><small>Everyday essentials</small></button>
+        <button class="category-card cat-home" data-filter="Home & Kitchen"><span class="cat-icon">⌂</span><b>Home & Living</b><small>Make room for better</small></button>
+        <button class="category-card cat-sports" data-filter="Sports"><span class="cat-icon">◉</span><b>Sports & Fitness</b><small>Move with confidence</small></button>
+        <button class="category-card cat-beauty" data-filter="Beauty"><span class="cat-icon">✧</span><b>Beauty</b><small>Your daily ritual</small></button>
+        <button class="category-card cat-accessories" data-filter="Accessories"><span class="cat-icon">⌚</span><b>Accessories</b><small>Finishing touches</small></button>
+      </div>
+    </section>
+
+    <section class="promo-band container" id="offers">
+      <div><span class="eyebrow">LIMITED-TIME SPECIAL</span><h2>Good things come<br>with <em>great deals.</em></h2><p>Fresh finds. Better prices. Only at SHOPNEX.</p><a href="#products" class="btn btn-light">Explore offers ↗</a></div>
+      <div class="promo-right"><div class="promo-circle">NEX<br><b>10</b></div><div class="promo-note">USE CODE <strong>NEX10</strong><small>Extra savings at checkout</small></div></div>
+    </section>
+
+    <section class="section container" id="products">
+      <div class="section-heading product-heading"><div><span class="eyebrow">HANDPICKED FOR YOU</span><h2>Popular right now</h2><p class="section-subtitle">The pieces everyone's adding to their cart.</p></div>
+        <div class="product-controls"><select id="sortSelect" aria-label="Sort products"><option value="featured">Sort: Featured</option><option value="low">Price: Low to High</option><option value="high">Price: High to Low</option><option value="rating">Top Rated</option><option value="discount">Biggest Discount</option></select></div>
+      </div>
+      <div class="filter-row"><button class="filter-chip active" data-filter="All">All products</button><button class="filter-chip" data-filter="Electronics">Electronics</button><button class="filter-chip" data-filter="Fashion">Fashion</button><button class="filter-chip" data-filter="Home & Kitchen">Home & Living</button><button class="filter-chip" data-filter="Sports">Sports</button><button class="filter-chip" data-filter="Beauty">Beauty</button><label class="price-filter">Max price <input type="range" id="priceRange" min="1000" max="100000" step="1000" value="100000"><b id="priceValue">₹1,00,000</b></label></div>
+      <div class="results-line"><span id="resultCount">Showing all products</span><button id="clearFilters" class="clear-btn">Clear filters ×</button></div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="newsletter container"><div><span class="eyebrow">THE GOOD STUFF, FIRST</span><h2>A little joy in your inbox.</h2><p>Get first access to new drops, special offers and more.</p></div><form id="newsletterForm"><input type="email" required placeholder="Enter your email address"><button class="btn btn-primary">Subscribe ↗</button></form></section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a class="logo footer-logo" href="#"><span class="logo-mark">S</span>SHOP<span>NEX</span></a><p>Discover More. Shop Smarter.<br>Thoughtful finds for everyday living.</p><div class="socials">ig&nbsp;&nbsp; f&nbsp;&nbsp; in&nbsp;&nbsp; ▶</div></div><div><b>Shop</b><a href="#products">All products</a><a href="#categories">Categories</a><a href="#offers">Offers & deals</a></div><div><b>Help</b><a href="#">Contact us</a><a href="#">Shipping & returns</a><a href="#">FAQs</a></div><div><b>Stay connected</b><p class="footer-small">Questions? We're happy to help.</p><a href="mailto:hello@shopnex.example">hello@shopnex.example</a></div></div><div class="container footer-bottom"><span>© 2026 SHOPNEX. Demo storefront.</span><span>Privacy · Terms · Secure shopping</span></div></footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer"><div class="drawer-head"><div><span class="eyebrow">YOUR BAG</span><h3>Shopping cart <span id="cartTitleCount">(0)</span></h3></div><button class="close-btn" data-close>×</button></div><div class="drawer-content" id="cartItems"></div><div class="cart-summary" id="cartSummary"></div></aside>
+  <aside class="drawer" id="wishlistDrawer"><div class="drawer-head"><div><span class="eyebrow">SAVED FOR LATER</span><h3>Your wishlist</h3></div><button class="close-btn" data-close>×</button></div><div class="drawer-content" id="wishlistItems"></div></aside>
+
+  <div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"><button class="close-btn modal-close" data-close>×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
